@@ -1,0 +1,70 @@
+body {
+  font-family: "Hind", sans-serif;
+  background-color: #0c0a09;
+  color: #f6f6f6; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Teko", sans-serif; }
+
+.display-txt {
+  font-size: clamp(40px, 6vw, 52px); }
+
+.hero-banner {
+  padding: 7rem 0rem 10rem;
+  min-height: 50vh;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  gap: 24px; }
+  @media (max-width: 767px) {
+    .hero-banner {
+      gap: 16px; } }
+
+.artist-logo {
+  height: 250px;
+  width: auto; }
+
+.ticket-container {
+  padding: 24px; }
+  @media (max-width: 767px) {
+    .ticket-container {
+      border-radius: 0;
+      padding: 16px; } }
+
+.points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .points li {
+    text-align: left; }
+
+.event {
+  padding: 7rem 0rem 10rem; }
+
+.deals {
+  border: 2px solid;
+  border-color: #262626;
+  height: 100%;
+  padding: 6rem 3rem;
+  border-radius: 4px; }
+  .deals-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  @media (max-width: 767px) {
+    .deals {
+      padding: 4rem 2px; } }
+
+.cta-container {
+  margin: 0 auto;
+  padding: 12rem 0;
+  max-width: 850px; }
