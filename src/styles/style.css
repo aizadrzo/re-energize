@@ -9,26 +9,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Teko", sans-serif; }
+  font-family: "Panchang", sans-serif; }
 
-.display-txt {
-  font-size: clamp(40px, 6vw, 52px); }
+.display {
+  font-family: "Panchang", sans-serif; }
+  .display-bold {
+    font-size: clamp(40px, 6vw, 52px);
+    font-weight: 700; }
+    .display-bold__outline {
+      font-size: clamp(40px, 6vw, 52px);
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #f6f6f6; }
 
-.hero-banner {
-  padding: 7rem 0rem 10rem;
-  min-height: 50vh;
-  height: 100%;
+.hero {
   width: 100%;
-  display: grid;
-  place-content: center;
-  gap: 24px; }
-  @media (max-width: 767px) {
-    .hero-banner {
-      gap: 16px; } }
-
-.artist-logo {
-  height: 250px;
-  width: auto; }
+  height: 100%; }
+  .hero-banner {
+    padding: 12rem 0rem;
+    min-height: 50vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    gap: 24px; }
+    @media (max-width: 767px) {
+      .hero-banner {
+        padding: 6rem 0rem;
+        gap: 16px; } }
 
 .ticket-container {
   padding: 24px; }
@@ -45,26 +53,56 @@ h6 {
     text-align: left; }
 
 .event {
-  padding: 7rem 0rem 10rem; }
+  width: 100%;
+  height: 100%;
+  padding: 7rem 0rem 10rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem; }
+  @media (max-width: 767px) {
+    .event {
+      flex-direction: column;
+      gap: 2rem; } }
+  .event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-shrink: 2; }
 
 .deals {
   border: 2px solid;
   border-color: #262626;
   height: 100%;
   padding: 6rem 3rem;
-  border-radius: 4px; }
+  border-radius: 16px;
+  background-color: #171718; }
   .deals-container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; }
+    gap: 4rem; }
+    @media (max-width: 767px) {
+      .deals-container {
+        gap: 2rem; } }
   @media (max-width: 767px) {
     .deals {
-      padding: 4rem 2px; } }
+      padding: 4rem 2rem; } }
 
-.cta-container {
-  margin: 0 auto;
-  padding: 12rem 0;
-  max-width: 850px; }
+.cta {
+  padding: 7rem 0 7rem; }
+  .cta-img {
+    position: absolute;
+    top: 2rem;
+    z-index: -1; }
+    @media (max-width: 767px) {
+      .cta-img {
+        top: 10rem; } }
+  .cta-container {
+    margin: 0 auto;
+    padding: 12rem 0;
+    max-width: 850px;
+    position: relative; }
+  .cta-text {
+    margin-top: 5rem; }

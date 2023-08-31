@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=hind@400,600,700&f[]=teko@600&display=swap"
+      href="https://api.fontshare.com/v2/css?f[]=hind@400,600,700&f[]=panchang@700,600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -36,11 +36,8 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
             </div>
             <div class="container">
               <div>
-                <h2 class="fs-1">30th September 2023</h2>
-                <h4 class="fs-3">
-                  Bandar Malaysia, <br />
-                  Kuala Lumpur
-                </h4>
+                <h2 class="fs-1">30th SEPT 2023</h2>
+                <span class="fs-3">BANDAR MALAYSIA</span>
               </div>
             </div>
           </div>
@@ -49,9 +46,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       <!-- Lineup -->
       <div class="row py-5">
         <div class="container text-center">
-          <h3 class="display-txt">ARTIST LINEUP</h3>
-          <div class="container py-3">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+          <h3 class="display-bold">ARTIST LINEUP</h3>
+          <div class="container py-5">
+            <div class="row row-cols-3 g-5">
               <div class="col d-flex justify-content-center">
                 <img src="./images/artists/go.svg" alt="go" class="img-fluid" />
               </div>
@@ -59,35 +56,35 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
                 <img
                   src="./images/artists/adda.svg"
                   alt="add"
-                  class="img-fluid artist-logo"
+                  class="img-fluid"
                 />
               </div>
-              <div class="col d-flex justify-content-center">
+              <!-- <div class="col d-flex justify-content-center">
                 <img
                   src="./images/artists/david.svg"
                   alt="add"
-                  class="img-fluid artist-logo"
+                  class="img-fluid"
                 />
-              </div>
+              </div> -->
               <div class="col d-flex justify-content-center">
                 <img
                   src="./images/artists/osman.svg"
                   alt="add"
-                  class="img-fluid artist-logo"
+                  class="img-fluid"
                 />
               </div>
               <div class="col d-flex justify-content-center">
                 <img
                   src="./images/artists/vision_x.svg"
                   alt="add"
-                  class="img-fluid artist-logo"
+                  class="img-fluid"
                 />
               </div>
               <div class="col d-flex justify-content-center">
                 <img
                   src="./images/artists/amin_salmee.svg"
                   alt="add"
-                  class="img-fluid artist-logo"
+                  class="img-fluid"
                 />
               </div>
             </div>
@@ -95,33 +92,16 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
         </div>
       </div>
       <!-- Event Date-->
-      <div class="row event">
-        <div class="container event-container">
-          <div class="row row-cols-1 row-cols-lg-2 g-3">
-            <div class="col">
-              <img
-                src="./images/section_event.png"
-                alt="event"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col d-flex flex-column justify-content-center">
-              <div class="container event-details">
-                <h3 class="fs-1">RE-ENERGIZE FESTIVAL 2023</h3>
-                <span class="fs-4">
-                  Ready to get re-energized? Secure your ticket for the most
-                  electrifying rave event of the year!
-                </span>
-                <hr />
-                <!-- Event Details -->
-                <div class="d-flex flex-column py-3">
-                  <span class="fs-4">30th September 2023</span>
-                  <span class="fs-4">Bandar Malaysia</span>
-                  <span class="fs-4">4:00PM till Late</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="event">
+        <div class="event-img">
+          <img src="./images/event_img.png" alt="event" class="img-fluid" />
+        </div>
+        <div class="container event-details">
+          <h3 class="display-bold fs-1">RE-ENERGIZE FESTIVAL 2023</h3>
+          <span class="fs-4">
+            Ready to get re-energized? Secure your ticket for the most
+            electrifying rave event of the year!
+          </span>
         </div>
       </div>
       <div>
@@ -130,9 +110,9 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
           <div class="ticket-container">
             <div class="container text-center py-3">
               <div class="d-flex flex-column justify-content-center">
-                <h1 class="display-txt">TICKET SALES</h1>
-                <span class="fs-4">1st September 2023</span>
-                <span class="fs-4">8:00PM - 11:45PM</span>
+                <h1 class="display-bold">TICKET SALES</h1>
+                <span class="display fs-4 fw-semibold">1st September 2023</span>
+                <span class="display fs-4 fw-semibold">8:00PM - 11:45PM</span>
               </div>
             </div>
           </div>
@@ -148,15 +128,17 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
                 <div class="d-flex flex-column align-items-center">
                   <ul class="points">
                     <li class="fs-5 pb-2">
-                      <span class="fw-bold">Buyer 1-5:</span> <br />Get VIP
-                      access to the Artist Lounge – mingle with the stars!
+                      <span class="display fw-semibold">Buyer 1-5:</span>
+                      <br />Get VIP access to the Artist Lounge – mingle with
+                      the stars!
                     </li>
                     <li class="fs-5 pb-2">
-                      <span class="fw-bold">Buyer 6-10:</span> <br />Experience
-                      an unforgettable dinner with Giuseppe Ottaviani!
+                      <span class="display fw-semibold">Buyer 6-10:</span>
+                      <br />Experience an unforgettable dinner with Giuseppe
+                      Ottaviani!
                     </li>
                     <li class="fs-5 pb-2">
-                      <span class="fw-bold">Buyer 11-20:</span>
+                      <span class="display fw-semibold">Buyer 11-20:</span>
                       <br />Exclusive access right in front of the decks - Dive
                       right into the music.
                     </li>
@@ -175,21 +157,22 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
                 <div class="d-flex flex-column align-items-center">
                   <ul class="points">
                     <li class="fs-5 pb-2">
-                      <span class="fw-bold">Ticket Price:</span><br />
+                      <span class="display fw-semibold">Ticket Price:</span
+                      ><br />
                       Special launch price at RM199 (Door sale price: RM299).
                     </li>
                     <li class="fs-5 pb-2">
-                      <span class="fw-bold">Free Drink:</span>
+                      <span class="display fw-semibold">Free Drink:</span>
                       <br />Every ticket holder will be greeted with a free
                       drink worth RM30 upon entry.
                     </li>
                     <li class="fs-5 pb-2">
-                      <span class="fw-bold">Drink Voucher: </span>
+                      <span class="display fw-semibold">Drink Voucher: </span>
                       <br />Quench your thirst with an additional RM20 voucher
                       for drinks.
                     </li>
                     <li class="fs-5">
-                      <span class="fw-bold">Free Parking:</span>
+                      <span class="display fw-semibold">Free Parking:</span>
                       <br />Save RM30 with complimentary parking included with
                       each ticket.
                     </li>
@@ -203,8 +186,11 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       <!-- Prompt for tickets sales -->
       <div class="row cta">
         <div class="cta-container">
-          <div class="container text-center">
-            <h3 class="display-txt">SECURE YOUR SPOT NOW!<br /></h3>
+          <div class="cta-img">
+            <img src="./images/group-pic.png" alt="group" class="img-fluid" />
+          </div>
+          <div class="cta-text container text-center">
+            <h3 class="display-bold__outline">SECURE YOUR SPOT NOW!<br /></h3>
             <span class="fs-4">
               Don't miss out on a night of music, energy, and unforgettable
               experiences. Be part of the limited few to grab these exclusive
