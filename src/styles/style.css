@@ -17,30 +17,61 @@ h6 {
     font-size: clamp(40px, 6vw, 52px);
     font-weight: 700; }
     .display-bold__outline {
-      font-size: clamp(40px, 6vw, 52px);
+      font-size: clamp(32px, 4vw, 52px);
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #f6f6f6; }
 
-.logo {
-  max-width: 250px; }
+.banner {
+  padding: 1rem 0rem; }
 
 .hero {
   width: 100%;
-  height: 100%; }
+  min-height: 100vh;
+  height: auto;
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-content: center; }
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 70vh; } }
+  .hero-logo {
+    padding: 0 2rem; }
+    @media (max-width: 768px) {
+      .hero-logo {
+        padding: 0; } }
   .hero-banner {
-    padding: 3rem 0rem 7rem;
-    min-height: 50vh;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 24px; }
     @media (max-width: 768px) {
       .hero-banner {
-        padding: 1rem 0rem 4rem;
         gap: 16px; } }
+  .hero-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    gap: 16px; }
+
+.pill {
+  padding: 16px;
+  max-width: 800px;
+  background-color: #262626;
+  border: 2px solid;
+  border-color: #262626;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-radius: 16px; }
+  @media (max-width: 768px) {
+    .pill {
+      padding: 8px; } }
 
 .ticket-container {
   padding: 24px; }
@@ -52,7 +83,8 @@ h6 {
 .points {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; }
+  align-items: flex-start;
+  padding-left: 0 !important; }
   .points li {
     text-align: left; }
 
@@ -102,12 +134,15 @@ h6 {
     z-index: -1; }
     @media (max-width: 768px) {
       .cta-img {
-        top: 10rem;
+        top: -1rem;
         padding: 1rem 0; } }
   .cta-container {
     margin: 0 auto;
     padding-top: 12rem;
     max-width: 850px;
     position: relative; }
+    @media (max-width: 768px) {
+      .cta-container {
+        padding-top: 0; } }
   .cta-text {
     margin-top: 5rem; }
