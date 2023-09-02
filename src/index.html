@@ -8,10 +8,6 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=hind@400,600,700&f[]=panchang@700,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="
 https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
 "
@@ -23,256 +19,382 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>⚡ RE:ENERGIZE FESTIVAL</title>
   </head>
   <body>
+    <div class="logo">
+      <header class="logo-wrapper">
+        <img src="images/logo.png" alt="logo" class="img-fluid logo-img" />
+      </header>
+    </div>
     <div class="hero">
-      <div class="container text-center hero-banner">
-        <img src="images/logo.png" alt="logo" class="img-fluid hero-logo" />
-        <div class="hero-txt">
-          <h2 class="fs-1 display-bold">30th SEPT 2023</h2>
-          <h2 class="fs-1 display-bold__outline">BANDAR MALAYSIA</h2>
+      <div class="container-fluid text-center">
+        <div class="">
+          <h1 class="display-3 pb-2">READY TO GET <br />RE-ENERGIZED?</h1>
+          <h3 class="fs-4 pb-2">30th SEPT 2023, BANDAR MALAYSIA</h3>
         </div>
       </div>
     </div>
-    <main class="my-6 container">
+    <main>
+      <!-- Ticket Sales -->
+      <div class="container page-divider">
+        <!-- Title -->
+        <div class="header-container p-3 pb-md-4">
+          <h1 class="display-5">TICKET SALES</h1>
+          <p class="fs-5">
+            SECURE YOUR TICKET FOR THE MOST ELECTRIFYING RAVE EVENT OF THE YEAR!
+          </p>
+        </div>
+        <!-- Prices -->
+        <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 pricing-card">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">
+                  REGULAR
+                  <small class="text-white fw-light">PHASE 2</small>
+                </h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h1 class="card-title display-3">RM198</h1>
+                <ul
+                  class="list-unstyled mt-3 mb-4 flex-grow-1 d-flex flex-column align-items-center col-lg-8 mx-auto text-start"
+                >
+                  <li class="mb-2">
+                    <span class="fs-5"> Free Entry Drink Worth RM30 </span>
+                  </li>
+                  <li class="mb-2">
+                    <span class="fs-5"> Free Parking Voucher Worth RM30 </span>
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-outline-light"
+                >
+                  <h6 class="fs-5">BUY NOW</h6>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 pricing-card">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">
+                  VIP
+                  <small class="">PHASE 2</small>
+                </h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h1 class="card-title display-3">RM308</h1>
+                <ul
+                  class="list-unstyled mt-3 mb-4 flex-grow-1 d-flex flex-column align-items-center col-lg-8 mx-auto text-start"
+                >
+                  <li class="mb-2">
+                    <span class="fs-5">
+                      2x Drinks (Beers, Energy Drinks or Water)
+                    </span>
+                  </li>
+                  <li class="mb-2">
+                    <span class="fs-5"> 1 Official Merch </span>
+                  </li>
+                  <li class="mb-2">
+                    <span class="fs-5">
+                      Designated VIP Entrance and Access
+                    </span>
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-light">
+                  <h6 class="fs-5">BUY NOW</h6>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Perks -->
+      <div class="container page-divider">
+        <div class="row row-cols-1 row-cols-lg-2 align-items-center g-4">
+          <!-- Image -->
+          <div class="col">
+            <img
+              src="./images/section_img.png"
+              alt="section_img"
+              class="img-fluid"
+            />
+          </div>
+          <!-- Details -->
+          <div class="col">
+            <h2 class="fs-1 lh-1">
+              What Every Attendee Gets During This Launch:
+            </h2>
+            <!-- List Offers -->
+            <ul class="list-unstyled py-4">
+              <li>
+                <h4 class="fw-semibold">🍾 Free Drinks</h4>
+                <p class="fs-5">
+                  Every ticket holder will be greeted with a free drink worth
+                  RM30 upon entry.
+                </p>
+              </li>
+              <li>
+                <h4 class="fw-semibold">🍻 Drink Voucher</h4>
+                <p class="fs-5">
+                  Quench your thirst with an additional RM20 voucher for drinks.
+                </p>
+              </li>
+              <li>
+                <h4 class="fw-semibold">🚗 Free Parking</h4>
+                <p class="fs-5">
+                  Save RM30 with complimentary parking included with each
+                  ticket.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- Lineup -->
-      <div class="row py-5">
-        <div class="container text-center">
-          <div class="pill">
-            <small class="display fw-semibold">
-              STAY TUNED FOR MORE ARTIST ANNOUNCEMENT</small
-            >
-          </div>
-          <h3 class="display-bold">ARTIST LINEUP</h3>
-          <div class="container py-5 artist-lineup">
-            <div class="row row-cols-3 g-5">
-              <div class="col-12 d-flex justify-content-center">
-                <p class="display">HEADLINERS</p>
-              </div>
-              <div class="col-6 d-flex justify-content-center">
-                <img src="./images/artists/go.svg" alt="go" class="img-fluid" />
-              </div>
-              <div class="col-6 d-flex justify-content-center">
-                <div class="unannounced">
-                  <small class="display">???</small>
+      <div class="container page-divider">
+        <!-- Title -->
+        <div class="header-container p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-5">ARTIST LINEUP</h1>
+        </div>
+        <!-- Lineup Container -->
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="slick-slider row lineup-container">
+            <!-- Artist Card -->
+            <div class="col mb-2 pe-3">
+              <div class="card d-flex">
+                <img
+                  class="card-img-top flex-grow-1"
+                  src="images/artists/gio.png"
+                  alt="gio"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    HEADLINER/INTL DJ
+                  </h6>
+                  <h4 class="card-title col-8">GIUSEPPE OTTAVIANI</h4>
                 </div>
               </div>
-              <div class="col-12 d-flex justify-content-center">
-                <p class="display">INTERNATIONAL ACTS</p>
-              </div>
-              <div class="col d-flex justify-content-center">
+            </div>
+            <!-- Artist Card -->
+            <div class="col mb-2">
+              <div class="card d-flex">
                 <img
-                  src="./images/artists/adda.svg"
-                  alt="add"
-                  class="img-fluid"
+                  class="card-img-top flex-grow-1"
+                  src="./images/artists/coming_soon.png"
+                  alt="empty"
                 />
-              </div>
-              <div class="col d-flex justify-content-center">
-                <div class="unannounced">
-                  <small class="display">???</small>
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    HEADLINER/INTL DJ
+                  </h6>
+                  <h4 class="card-title col-8">???</h4>
                 </div>
               </div>
-              <div class="col d-flex justify-content-center">
-                <div class="unannounced">
-                  <small class="display">???</small>
+            </div>
+            <!-- Artist Card -->
+            <div class="col mb-2 ps-3">
+              <div class="card d-flex">
+                <img
+                  class="card-img-top flex-grow-1"
+                  src="./images/artists/addda.png"
+                  alt="adda"
+                />
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">INTL DJ</h6>
+                  <h4 class="card-title col-8">ADDA</h4>
                 </div>
               </div>
-              <div class="col-12 d-flex justify-content-center">
-                <p class="display">LOCAL ACTS</p>
-              </div>
-              <div class="col d-flex justify-content-center">
+            </div>
+            <!-- Artist Card -->
+            <div class="col mb-2 ps-3">
+              <div class="card d-flex">
                 <img
-                  src="./images/artists/osman.svg"
-                  alt="add"
-                  class="img-fluid"
+                  class="card-img-top flex-grow-1"
+                  src="./images/artists/coming_soon.png"
+                  alt="empty"
                 />
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">INTL DJ</h6>
+                  <h4 class="card-title col-8">???</h4>
+                </div>
               </div>
-              <div class="col d-flex justify-content-center">
+            </div>
+            <!-- Artist Card -->
+            <div class="col mb-2 ps-3">
+              <div class="card d-flex">
                 <img
-                  src="./images/artists/vision_x.svg"
-                  alt="add"
-                  class="img-fluid"
+                  class="card-img-top flex-grow-1"
+                  src="./images/artists/coming_soon.png"
+                  alt="empty"
                 />
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">INTL DJ</h6>
+                  <h4 class="card-title col-8">???</h4>
+                </div>
               </div>
-              <div class="col d-flex justify-content-center">
+            </div>
+            <!-- Artist Card -->
+            <div class="col mb-2 ps-3">
+              <div class="card d-flex">
                 <img
-                  src="./images/artists/haikal_ahmad.png"
-                  alt="add"
-                  class="img-fluid"
+                  class="card-img-top flex-grow-1"
+                  src="./images/artists/vision_x_haikal.png"
+                  alt="vision_x-haikal_ahmad"
                 />
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">LOCAL DJ</h6>
+                  <h4 class="card-title col-8">VISION X & HAIKAL AHMAD</h4>
+                </div>
               </div>
-              <div class="col d-flex justify-content-center">
+            </div>
+            <!-- Artist Card -->
+            <div class="col mb-2 ps-3">
+              <div class="card d-flex">
                 <img
-                  src="./images/artists/amin_salmee.svg"
-                  alt="add"
-                  class="img-fluid"
+                  class="card-img-top flex-grow-1"
+                  src="./images/artists/osman_mousa.png"
+                  alt="osman"
                 />
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">LOCAL DJ</h6>
+                  <h4 class="card-title col-8">OSMAN MOUSA</h4>
+                </div>
               </div>
-              <div class="col d-flex justify-content-center">
+            </div>
+            <!-- Artist Card -->
+            <div class="col mb-2 ps-3">
+              <div class="card d-flex">
                 <img
-                  src="./images/artists/rasztooten.svg"
-                  alt="add"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col d-flex justify-content-center">
-                <img
+                  class="card-img-top flex-grow-1"
                   src="./images/artists/ramsey.png"
-                  alt="add"
-                  class="img-fluid"
+                  alt="ramsey"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <!-- Ticket Sales Date -->
-        <div class="row">
-          <div class="ticket-container">
-            <div class="container text-center py-3">
-              <div class="d-flex flex-column justify-content-center">
-                <h1 class="display-bold">TICKET SALES</h1>
-                <span class="display fs-4 fw-semibold">1st September 2023</span>
-                <span class="display fs-4 fw-semibold">8:00PM - 11:45PM</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-2 g-3 py-5">
-          <!-- Exclusive Deals -->
-          <div class="col">
-            <div class="deals">
-              <div class="container text-center deals-container">
-                <h3 class="fs-2">
-                  Exclusive Bonuses for Early Birds During The Ticket Sales:
-                </h3>
-                <div class="d-flex flex-column align-items-center">
-                  <ul class="points">
-                    <li class="fs-5 pb-2">
-                      <div class="row">
-                        <div class="col-1 g-2">
-                          <img src="./images/checkmark.svg" alt="checkmark" />
-                        </div>
-                        <div class="col">
-                          <span class="display fw-semibold">Buyer 1-5:</span>
-                          <br /><span>
-                            Get VIP access to the Artist Lounge – mingle with
-                            the stars!
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">LOCAL DJ</h6>
+                  <h4 class="card-title col-8">RAMSEY WESTWOOD</h4>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Normal Deals -->
-          <div class="col">
-            <div class="deals">
-              <div class="container text-center deals-container">
-                <h3 class="fs-2">
-                  What Every Attendee Gets if you buy during this launch:
-                </h3>
-                <div class="d-flex flex-column align-items-center">
-                  <ul class="points">
-                    <li class="fs-5 pb-2">
-                      <div class="row">
-                        <div class="col-1 g-2">
-                          <img src="./images/checkmark.svg" alt="checkmark" />
-                        </div>
-                        <div class="col">
-                          <span class="display fw-semibold">Ticket Price:</span>
-                          <br /><span>
-                            Special launch price at RM198 (Door sale price:
-                            RM299).
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="fs-5 pb-2">
-                      <div class="row">
-                        <div class="col-1 g-2">
-                          <img src="./images/checkmark.svg" alt="checkmark" />
-                        </div>
-                        <div class="col">
-                          <span class="display fw-semibold">Free Drink:</span>
-                          <br /><span>
-                            Every ticket holder will be greeted with a free
-                            drink worth RM30 upon entry.
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="fs-5 pb-2">
-                      <div class="row">
-                        <div class="col-1 g-2">
-                          <img src="./images/checkmark.svg" alt="checkmark" />
-                        </div>
-                        <div class="col">
-                          <span class="display fw-semibold"
-                            >Drink Voucher:</span
-                          >
-                          <br /><span>
-                            Quench your thirst with an additional RM20 voucher
-                            for drinks.
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="fs-5">
-                      <div class="row">
-                        <div class="col-1 g-2">
-                          <img src="./images/checkmark.svg" alt="checkmark" />
-                        </div>
-                        <div class="col">
-                          <span class="display fw-semibold">Free Parking:</span>
-                          <br /><span>
-                            Save RM30 with complimentary parking included with
-                            each ticket.
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+            <!-- Artist Card -->
+            <div class="col mb-2 ps-3">
+              <div class="card d-flex">
+                <img
+                  class="card-img-top flex-grow-1"
+                  src="./images/artists/rasztooten.png"
+                  alt="RASZTOOTEN"
+                />
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">LOCAL DJ</h6>
+                  <h4 class="card-title col-8">RASZTOOTEN</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Artist Card -->
+            <div class="col mb-2 ps-3">
+              <div class="card d-flex">
+                <img
+                  class="card-img-top flex-grow-1"
+                  src="./images/artists/amin_salmee.png"
+                  alt="amin salmee"
+                />
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">LOCAL VOCALIST</h6>
+                  <h4 class="card-title col-8">AMIN SALMEE</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Prompt for tickets sales -->
-      <div class="row cta">
-        <div class="cta-container">
-          <div class="cta-img">
-            <img src="./images/group-pic.png" alt="group" class="img-fluid" />
-          </div>
-          <div class="cta-text container text-center">
-            <h3 class="display-bold__outline">SECURE YOUR SPOT NOW!<br /></h3>
-            <span class="fs-4">
-              Don't miss out on a night of music, energy, and unforgettable
-              experiences. Be part of the limited few to grab these exclusive
-              bonuses!
-            </span>
-          </div>
+        <div class="container btn-wrap px-5 py-3">
+          <button class="btn prev-btn">
+            <svg
+              width="50"
+              height="29"
+              viewBox="0 0 50 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.11573 12.9738L16.1998 1.89236L14.3075 0L-1.39495e-06 14.3102L14.3075 28.6203L16.1998 26.728L5.11573 15.6466H50V12.9738H5.11573Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button class="btn next-btn">
+            <svg
+              width="50"
+              height="29"
+              viewBox="0 0 50 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M44.8843 12.9738L33.8002 1.89236L35.6925 0L50 14.3102L35.6925 28.6203L33.8002 26.728L44.8843 15.6466H0V12.9738H44.8843Z"
+                fill="white"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="container text-center">
+      <!-- Prompt  -->
+      <div
+        class="page-divider me-md-3 px-3 px-md-5 text-center overflow-hidden"
+      >
+        <div class="my-3 py-3">
+          <div class="header-container">
+            <h2 class="display-5">SECURE YOUR SPOT NOW!</h2>
+          </div>
+          <p class="fs-5 col col-lg-5 mx-auto">
+            Don't miss out on a night of music, energy, and unforgettable
+            experiences. Be part of the limited few to grab these exclusive
+            bonuses!
+          </p>
+        </div>
+        <div
+          class="mx-auto"
+          style="
+            width: 90%;
+            height: 300px;
+            background-image: url(./images/group-pic.png);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+      </div>
+      <div class="container page-divider">
+        <div class="header-container">
           <h3 class="fs-1">REGISTER FOR THE WAITING LIST</h3>
-          <span class="fs-4">
-            Enter your Name, Phone Number, and Email. With that, the chances of
-            being the fastest winners are high!
-          </span>
         </div>
         <div
           id="onpay-prospect-form"
           data-url="https://reenergizefestival.onpay.my/prospect/form/1"
           data-only_form="1"
         ></div>
+      </div>
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top"
+        >
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center"
+          >
+            <span class="mb-3 mb-md-0 text-center text-white"
+              >© 2023 RE-ENERGIZE FESTIVAL</span
+            >
+          </div>
+        </footer>
       </div>
     </main>
     <script src="https://cdn.onpay.my/assets/js/embed-prospect-form.008b486c.min.js"></script>
@@ -281,5 +403,18 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
       integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
