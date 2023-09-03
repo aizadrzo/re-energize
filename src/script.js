@@ -2,13 +2,13 @@ $(document).ready(function () {
     $('.slick-slider').slick({
         infinite: false,
         arrows: false,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2.5,
+        slidesToScroll: 2,
         responsive: [
             {
                 breakpoint: 769,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1.5,
                     slidesToScroll: 1
                 }
             },
