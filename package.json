@@ -4,14 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "css": "node-sass --include-path scss ./scss/style.scss ./src/styles/style.css",
-    "watch": "nodemon -e scss -x 'npm run css'"
+    "watch": "nodemon -e scss -x 'npm run css'",
+    "minify-html": "html-minifier-terser ./src/index.html --collapse-whitespace --output=./dist/index.html",
+    "minify-css": "postcss ./src/styles/style.css --use autoprefixer cssnano postcss-pxtorem --output ./dist/styles/style.css --no-map",
+    "transpile-js": "babel ./src/script.js -o ./dist/script.js --presets=@babel/preset-env",
+    "minify-js": "uglifyjs dist/script.js --compress -o dist/script.js",
+    "build": "npm run minify-html && npm run minify-css && npm run transpile-js && npm run minify-js"
   },
   "author": "Aizad Ridzo",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.14",
+    "autoprefixer": "^10.4.15",
+    "cssnano": "^6.0.1",
+    "html-minifier-terser": "^7.2.0",
     "node-sass": "^9.0.0",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0",
+    "postcss-pxtorem": "^6.0.0",
+    "uglify-js": "^3.17.4"
   }
 }

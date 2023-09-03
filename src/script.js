@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.slick-slider').slick({
+        lazyLoad: 'ondemand',
         infinite: false,
         arrows: false,
         slidesToShow: 2.5,
