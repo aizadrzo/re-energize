@@ -24,14 +24,12 @@ h6 {
 }
 
 .logo {
-  width: 100%;
-  height: 100%;
   &-wrapper {
     padding: 2rem 0;
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
   }
   &-img {
@@ -116,6 +114,12 @@ h6 {
   @include mobile {
     min-height: 50vh;
   }
+
+  &-btn {
+    h6 {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .btn-wrap {
@@ -131,4 +135,28 @@ h6 {
 
 footer {
   border-top: 2px solid $BORDER_COLOR;
+}
+
+.offer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(12, 10, 9, 0.7);
+    display: grid;
+    place-content: center;
+  }
+
+  &-txt {
+    position: relative;
+    z-index: 1;
+    margin-bottom: unset;
+  }
 }

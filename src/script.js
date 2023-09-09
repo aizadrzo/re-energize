@@ -42,4 +42,13 @@ $(document).ready(function () {
             $(".next-btn").removeClass("slick-disabled");
         }
     });
+
+    $("#ticket-btn-1, #ticket-btn-2").click(function () {
+        var url = "https://reenergizefest.ubertickets.asia/events/52519";
+        window.location.href = url;
+    });
+    $("#hero-btn").click(function () {
+        var offset = $("#ticket-sales").offset().top;
+        $("html, body").animate({ scrollTop: offset }, 250);
+    });
 });
