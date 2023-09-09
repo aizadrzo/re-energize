@@ -115,3 +115,9 @@ footer {
     position: relative;
     z-index: 1;
     margin-bottom: unset; }
+
+.social {
+  min-height: 400px; }
+
+.gradient-social {
+  border: #f6f6f6 2px solid; }

@@ -51,4 +51,12 @@ $(document).ready(function () {
         var offset = $("#ticket-sales").offset().top;
         $("html, body").animate({ scrollTop: offset }, 250);
     });
+    $("#fb-btn").click(function () {
+        var url = "https://www.facebook.com/reenergizefestival";
+        window.location.href = url;
+    });
+    $("#ig-btn").click(function () {
+        var url = "https://www.instagram.com/re.energizefest/";
+        window.location.href = url;
+    });
 });
